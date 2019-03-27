@@ -1,0 +1,11 @@
+<div>
+  <br />
+  <div *ngIf="showText">
+    <p>Loading...</p>
+  </div>
+  
+  <div *ngFor="let tweet of tweets">
+    <p><b>{{tweet.stamp}}</b></p>
+    <p>{{tweet.text}}</p>
+  </div>
+</div>
